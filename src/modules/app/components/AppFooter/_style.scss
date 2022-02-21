@@ -1,0 +1,34 @@
+@use "fantom-vue-components/src/assets/scss/tools/media";
+
+.appfooter {
+	padding: var(--f-spacer-5) var(--main-lr-padding);
+	background: var(--f-doc-footer-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&_item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			//text-decoration: none;
+			color: #fff !important;
+		}
+	}
+
+    img {
+        display: block;
+    }
+}
+
+@include media.media-max(848px) {
+	.appfooter {
+		flex-direction: column;
+		&_item {
+			& + & {
+				margin-top: var(--f-spacer-5);
+			}
+		}
+	}
+}

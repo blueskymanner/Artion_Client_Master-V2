@@ -1,0 +1,29 @@
+@use "fantom-vue-components/src/assets/scss/tools/media";
+
+.pg-faq {
+    padding: 50px var(--f-spacer-4) 0;
+
+    &__header {
+        margin: 0 0 50px;
+        letter-spacing: 0.28em;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 690px;
+    }
+}
+
+@include media.media-min(728px) {
+    .pg-faq {
+        padding-top: 150px;
+        margin-bottom: 190px;
+
+        &__header {
+            margin-bottom: var(--f-spacer-9);
+            text-align: center;
+        }
+    }
+}

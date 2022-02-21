@@ -1,0 +1,3 @@
+@use "@/assets/scss/filter-item" as fi;
+
+@include fi.filter-item('categoriesfilter');

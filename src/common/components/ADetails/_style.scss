@@ -1,0 +1,28 @@
+.adetails {
+    //--fdetails-transitions-length: 150ms;
+
+    &.fdetails {
+        summary {
+            padding: var(--f-spacer-4);
+        }
+
+        .fdetails {
+            &_label {
+                font-weight: 700;
+            }
+
+            &_content {
+                padding: var(--f-spacer-4);
+                background: var(--f-color-primary-1);
+            }
+        }
+    }
+
+    &.adetails_p0 {
+        .fdetails {
+            &_content {
+                padding: 0;
+            }
+        }
+    }
+}

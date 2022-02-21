@@ -1,0 +1,136 @@
+@use "fantom-vue-components/src/assets/scss/tools/media";
+@use "@/assets/scss/variables";
+
+.pg-header {
+    --appheader-background: var(--theme-pg-background-color);
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--f-spacer-2);
+
+    padding: var(--f-spacer-6) var(--f-spacer-6) 0 var(--f-spacer-7);
+    border-bottom: var(--appheader-border-bottom);
+    background: var(--appheader-background);
+
+    z-index: var(--f-zindex-sticky);
+
+    &__col {
+        display: flex;
+        align-items: center;
+        gap: var(--f-spacer-5);
+
+        &--wallet-button {
+            display: none;
+        }
+
+        &--burger {
+            display: block;
+        }
+
+        &--menu {
+            display: none;
+        }
+    }
+
+    &__hamburger {
+        position: relative;
+        z-index: 5;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &--open {
+            .pg-header__hamburger-bar--1 {
+                transform: rotate(-45deg) translate(-1px, 6px);
+            }
+
+            .pg-header__hamburger-bar--2 {
+                opacity: 0;
+            }
+
+            .pg-header__hamburger-bar--3 {
+                transform: rotate(45deg) translate(-2.5px, -8px);
+            }
+        }
+    }
+
+    &__hamburger-bar {
+        width: 18px;
+        height: 2px;
+        background-color: var(--theme-pg-color);
+        margin: 4px 0;
+        border-radius: 4px;
+        transition: 0.15s;
+    }
+
+    &__mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 105%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(9, 12, 16, 0.9);
+        backdrop-filter: blur(4px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.15s;
+
+        &--active {
+            left: 0;
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0;
+    }
+}
+
+@include media.media-min(768px) {
+    .pg-header {
+        gap: var(--f-spacer-1);
+
+        &__col {
+            display: flex;
+            align-items: center;
+            gap: var(--f-spacer-5);
+
+            &--wallet-button {
+                display: block;
+            }
+
+            &--burger {
+                display: none;
+            }
+
+            &--menu {
+                display: block;
+            }
+        }
+    }
+}
+
+@include media.media-min(900px) {
+    .pg-header {
+        gap: var(--f-spacer-8);
+
+        &__logo {
+            padding-right: 100px;
+        }
+    }
+}
+
+@include media.media-min(1200px) {
+    .pg-header {
+        gap: var(--f-spacer-9);
+    }
+}

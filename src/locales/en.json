@@ -1,0 +1,606 @@
+{
+    "explore": "Explore",
+    "create": "Create",
+    "home": "Home",
+    "categories": "Categories",
+    "collections": "Collections",
+    "status": "Status",
+    "results": "results",
+    "your_profile": "Your Profile",
+    "nonZeroPrice": "Price must be non zero value",
+    "insufficientBalance": "Insufficient balance",
+    "insufficientTokenBalance": "Insufficient {token} Balance",
+    "startAuction": "Start Auction",
+    "updateAuction": "Update Auction",
+    "profile": "Profile",
+    "reservePrice": "Reserve Price",
+    "redeem": "Redeem",
+    "price": "Price",
+    "from": "From",
+
+    "navigation": {
+        "explore": "@:explore",
+        "create": "@:create",
+        "drop": "The Drop",
+        "nfts": "The NFTs",
+        "myNfts": "My NFTs"
+    },
+
+    "category": {
+        "art": "Art",
+        "collectibles": "Collectibles",
+        "sports": "Sports",
+        "utility": "Utility",
+        "trading_cards": "Trading Cards",
+        "virtual_worlds": "Virtual Worlds",
+        "domain_names": "Domain Names"
+    },
+
+    "collection": {
+        "artion": "Artion",
+        "gasly": "Pierre Gasly"
+    },
+
+    "statuses": {
+        "buy_now": "Buy Now",
+        "has_bids": "Has Bids",
+        "has_offers": "Has Offers",
+        "on_auction": "On Auction"
+    },
+
+    "group": {
+        "all_items": "All Items",
+        "single_items": "Single Items"
+    },
+
+    "sort_by": {
+        "recently_created": "Recently Created",
+        "oldest": "Oldest",
+        "recently_listed": "Recently Listed",
+        "recently_sold": "Recently Sold",
+        "ending_soon": "Ending Soon",
+        "highest_price": "Highest Price",
+        "lowest_price": "Lowest Price",
+        "highest_last_sale": "Highest Last Sale",
+        "mostly_viewed": "Mostly Viewed"
+    },
+
+    "activity_types": {
+        "unknown": "UNKNOWN",
+        "listing_created": "Listing Created",
+        "listing_updated": "Listing Updated",
+        "listing_cancelled": "Listing Cancelled",
+        "listing_sold": "Listing Sold",
+        "offer_created": "Offer Created",
+        "offer_cancelled": "Offer Cancelled",
+        "offer_sold": "Offer Sold",
+        "auction_created": "Auction Created",
+        "auction_bid": "Auction Bid",
+        "auction_bid_withdraw": "Auction Bid Withdraw",
+        "auction_cancelled": "Auction Cancelled",
+        "auction_resolved": "Auction Resolved",
+        "auction_updated": "Auction Updated"
+    },
+
+    "walletMenu": {
+        "profile": "@:profile",
+        "settings": "Settings",
+        "collection": "Register Existing Collecton",
+        "logout": "Logout"
+    },
+
+    "page": {
+        "explore": {
+            "title": "Browse NFT's",
+            "filters": "Filters"
+        },
+        "account": {
+            "title": "Your profile"
+        },
+        "pg": {
+            "title": "PG"
+        }
+    },
+
+    "undermaintenance": {
+        "text": "Hi! This page is currently under maintenance and will be back soon!",
+        "link_title": "Back to Home"
+    },
+
+    "appsectionnft": {
+        "title": "Trade without platform fees on Artion",
+        "text": "Artion is an NFT marketplace built on Fantom. Create and trade NFTs instantly with low network costs."
+    },
+
+    "appsectionabout": {
+        "title": "Why Artion",
+        "card1": {
+            "title": "Easy Connect",
+            "text": "Using Metamask or CoinBase Wallet. Just click 'Connect Wallet' on the top right to start."
+        },
+        "card2": {
+            "title": "Super Fast",
+            "text": "Since Artion runs on the Fantom Opera Network, transactions are usually confirmed within 1-2 seconds."
+        },
+        "card3": {
+            "title": "Low Transaction Fees",
+            "text": "Transactions are usually just a few cents, allowing users to create and trade many NFTs without prohibitively high network fees."
+        },
+        "card4": {
+            "title": "Zero Platform Fees",
+            "text": "Trade NFTs via auction or direct offer without any fees taken by Artion."
+        }
+    },
+
+    "appsectioncategories": {
+        "title": "Browse by category",
+        "allCategories": "Explore All NFTs"
+    },
+
+    "appsearchbar": {
+        "label": "Search bar",
+        "placeholder": "Search items, collections and accounts"
+    },
+
+    "walletbutton": {
+        "connectWallet": "Connect Wallet"
+    },
+
+    "walletpicker": {
+        "connectToWallet": "Connect to a wallet"
+    },
+
+    "nftcard": {
+        "favorite": "Favorite"
+    },
+
+    "nftMakeOfferForm": {
+        "price": "@:price",
+        "offerExpiration": "Offer Expiration",
+        "placeOffer": "Place Offer",
+        "nonZeroPrice": "@:nonZeroPrice",
+        "insufficientBalance": "@:insufficientBalance",
+        "badDate": "Bad date",
+        "makeOfferSuccess": "You have successfully submitted an offer"
+    },
+
+    "nftsellform": {
+        "price": "@:price",
+        "startingTime": "Starting At",
+        "listItem": "List Item",
+        "quantity": "Quantity",
+        "nonZeroPrice": "@:nonZeroPrice",
+        "nonZeroQuantity": "Quantity must be non zero value",
+        "badDate": "Bad date",
+        "sellSuccess": "You have successfully sell an item"
+    },
+
+    "nftupdatelistingform": {
+        "price": "@:price",
+        "updateItem": "Update Item",
+        "updateSuccessful": "You have successfully updated your listing"
+    },
+
+    "nftstartauctionform": {
+        "reservePrice": "@:reservePrice",
+        "reservePriceInfo": "Reserve price is your desired one you want to get from this auction",
+        "startTime": "Start Time",
+        "auctionExpiration": "Auction Expiration",
+        "placeOffer": "Place Offer",
+        "nonZeroPrice": "@:nonZeroPrice",
+        "startAuction": "@:startAuction",
+        "updateAuction": "@:updateAuction",
+        "minBid": "Minimum bid should be equal or greater than reserve price",
+        "badDate": "Bad date",
+        "fillDate": "Fill the date please",
+        "startDateLower": "Start date must be lower than end date",
+        "dateLowerNow": "Date must greater than now",
+        "dateLowerNowPlus5": "End date must greater than now + 5 minutes",
+        "endDateGreater": "End date must be greater than start date",
+        "startSuccess": "You have successfully started the auction",
+        "updatePriceSuccess": "You have successfully updated reserve price",
+        "updateStartTimeSuccess": "You have successfully updated start time",
+        "updateEndTimeSuccess": "You have successfully updated auction expiration"
+    },
+
+    "densityswitch": {
+        "largeDisplay": "Large Display",
+        "smallDisplay": "Small Display"
+    },
+
+    "avideo": {
+        "play": "Play video",
+        "pause": "Pause video"
+    },
+
+    "nftdetail": {
+        "owned": "Owned by",
+        "views": "views",
+        "favorites": "favorites",
+        "priceHistory": "Price History",
+        "listings": "Listings",
+        "directOffers": "Direct Offers",
+        "properties": "Properties",
+        "symbol": "Symbol",
+        "royalty": "Royalty",
+        "recipient": "Recipient",
+        "ipRights": "IP_Rights",
+        "notAvailable": "Not available",
+        "collection": "Collection",
+        "nftCollection": "Fantom Powered NFT Collection",
+        "about": "About",
+        "chainInfo": "Chain Info",
+        "network": "Network",
+        "fantomOpera": "Fantom Opera",
+        "chainId": "Chain ID",
+        "fromCollection": "More from this collection"
+    },
+
+    "nftdetailprice": {
+        "currentPrice": "Current Price",
+        "buyNow": "Buy Now",
+        "buySuccessful": "You have successfully bought an item",
+        "makeOffer": "Make offer",
+        "offer": "Place your offer"
+    },
+
+    "nftauction": {
+        "reservePrice": "@:reservePrice",
+        "saleEnds": "Sale ends",
+        "saleEnded": "Sale ended",
+        "saleStarts": "Sale starts",
+        "highestBid": "Highest Bid",
+        "canWithdrawIn": "You can withdraw your bid {in}"
+    },
+
+    "nftbid": {
+        "placeBid": "Place Bid"
+    },
+
+    "nftbidform": {
+        "price": "Price",
+        "place": "Place",
+        "nonZeroPrice": "@:nonZeroPrice",
+        "insufficientTokenBalance": "Insufficient {token} Balance",
+        "newBidIsBelowCurrent": "Bid is below current bid",
+        "newBidIsBelowMin": "Bid is below min bid",
+        "placeBidSuccessful": "You have successfully placed a bid"
+    },
+
+    "ashareButton": {
+        "copy": "Copy Link",
+        "shareFacebook": "Share on Facebook",
+        "shareTwitter": "Share to Twitter",
+        "successCopied": "Copied!"
+    },
+
+    "nftlistfilters": {
+        "groupFilters": "Group Filters",
+        "sortbyFilters": "Sort by Filters"
+    },
+
+    "addcategory": {
+        "addCategory": "Add Category"
+    },
+
+    "collectionregisterform": {
+        "registerCollection": "Register Collection",
+        "useOwnerAddressOfCollection": "Please submit using the owner address of the collection. If you cannot use the owner address, please email us on contact@fantom.foundation with the information below (and proof of collection ownership, such as from the collection's official email address).",
+        "logoImage": "Logo Image",
+        "alsoBeUsedForNavigation": "This image will also be used for navigation. 300x300 recommended.",
+        "name": "Name",
+        "collectionName": "Collection Name",
+        "description": "Description",
+        "provideYourDescription": "Provide your description for your collection",
+        "royalty": "Royalty (%)",
+        "royaltyErr": "Value should be between 1 and 100",
+        "royaltyTooltip": "Each NFT under this collection exchanged through Artion will have a percentage of sale given to nominated wallet address.",
+        "feeRecipient": "Fee Recipient",
+        "feesTooltip": "The nominated Fantom Opera Network wallet address to receive roylties from each sale in this collection.",
+        "contactEmail": "Contact Email",
+        "emailAddress": "Email Address",
+        "emailTooltip": "We will use this email to notify you about your collection aplication. This will not be shared with others.",
+        "enterCollection": "Enter your collection's address",
+        "enterWebsite": "Enter your website url",
+        "enterDiscord": "Enter your Discord url",
+        "enterTwitter": "Enter your Twitter profile link",
+        "enterInstagram": "Enter your Instagram profile link",
+        "enterMedium": "Enter your Medium profile link",
+        "enterTelegram": "Enter your Telegram profile link",
+        "category": "Category",
+        "submit": "Submit"
+    },
+
+    "nftcreate": {
+        "collection": "Collection",
+        "collectionErr": "Chosen collection does not allow to mint new tokens from your address.",
+        "name": "Name",
+        "symbol": "Symbol",
+        "description": "Description",
+        "royalty": "Royalty (%)",
+        "royaltyErr": "Value should be between 1 and 100",
+        "royaltyTooltip": "If you set a royalty here, you will get X percent of sales price each time an NFT is sold on our platform.",
+        "linkToIp": "Link to IP Rights Document (Optional)",
+        "linkToIpTooltip": "Link to the document which proves your ownership of this image.",
+        "linkToIpPlaceholder": "Enter Link",
+        "unlockContent": "Unlockable Content",
+        "mint": "Mint",
+        "fileError": "Pick a file please",
+        "signInFirst": "You need to sign-in first",
+        "wasntUploaded": "Sorry, something went wrong. Data of your token wasn't uploaded",
+        "noNewTokenId": "Sorry, something went wrong. The token was minted, but unable to get new token id.",
+        "unlockableNotAttached": "Sorry, something went wrong. The token was minted, but the unlockable content was not attached.",
+        "success": "The token was successfully created.",
+        "messageFtm": "1 FTM are charged to create a new NFT."
+    },
+
+    "nftredeem": {
+        "updateShippingDetails": "Update Shipping Details",
+        "understandRedeeming": "I understand that redeeming will burn and destroy the digital NFT",
+        "fillOutForm": "Please fill out the form below, making sure the information you provide is accurate.",
+        "note": "Note: reedeeming the rewards will burn (destroy) the digital NFT.",
+        "redeemingSuccessful": "You successfully redeem NFT {name}",
+        "redeem": "@:redeem"
+    },
+
+    "pgModal": {
+        "heading": "Place a bid"
+    },
+    "pgSuccessNotification": {
+        "header": "Congrats!",
+        "highestBidder": "The TX went through!  Please check if you are the highest bidder.",
+        "mintedNFT": "You minted",
+        "continue": "Continue"
+    },
+
+    "pgBidForm": {
+        "currentBid": "Current bid",
+        "minNextBid": "Min bid",
+        "balance": "Balance",
+        "termsAndConditionsAgreement": "By checking this box, I agree to Artion's",
+        "termsAndConditionsLink": "Terms of Service",
+        "placeBid": "Place bid",
+        "newBidIsBelowCurrent": "Bid is below current bid",
+        "newBidIsBelowMin": "Bid is below min bid",
+        "mustBeNumber": "Bid must be number",
+        "bidMustBeDivisibleByHundred": "Bid must be in {amount} FTM increments minimum",
+        "insufficientBalance": "@:insufficientBalance"
+    },
+
+    "pgDrop": {
+        "paragraph1": "Three unique NFTs redeemable for a race-worn <span class=\"blue\">Pierre Gasly helmet</span>, a <span class=\"blue\">signed promotion helmet</span>, a <span class=\"blue\">VIP experience</span> and three <span class=\"blue\">meet and greet</span>.",
+        "paragraph2": "A limited edition 350 NFTs drop redeemable for <span class=\"blue\">signed caps</span> and <span class=\"blue\">limited edition T-shirts</span>."
+    },
+
+    "pgFooter": {
+        "privacy": "Privacy Policy",
+        "termsAndConditions": "Terms and Conditions",
+        "cookiePolicy": "Cookie Policy"
+    },
+
+    "pgAccountSettings": {
+        "accountSettings": "Account Settings"
+    },
+
+    "pgNftCard": {
+        "currentBid": "Current Bid",
+        "noBids": "no bids",
+        "endsIn": "Auction Ending in",
+        "startsIn": "Auction Starting in",
+        "startingPrice": "Starting Price",
+        "days": "days",
+        "hours": "hours",
+        "minutes": "minutes",
+        "seconds": "seconds",
+        "hasEnded": "Auction has ended",
+        "price": "@:price",
+        "minted": "Minted",
+        "insufficientBalance": "@:insufficientTokenBalance"
+    },
+
+    "nftDirectOffersGrid": {
+        "accept": "Accept",
+        "withdraw": "Withdraw",
+        "from": "@:from",
+        "price": "@:price",
+        "expires": "Expires",
+        "withdrawSuccess": "You have successfully withdraw an offer",
+        "acceptSuccess": "You have successfully accepted an offer",
+        "cantAccept": "Cancel auction first to accept this offer",
+        "status": "@:status"
+    },
+
+    "nftlistingsgrid": {
+        "from": "@:from",
+        "price": "@:price",
+        "status": "@:status",
+        "buy": "Buy"
+    },
+
+    "itemstatuses": {
+        "closed": "Closed",
+        "expired": "Expired"
+    },
+
+   
+
+    "account": {
+        "unnamed": "Unnamed",
+        "copy": "Copy",
+        "collected": "Collected",
+        "created": "Created",
+        "favorited": "Favorited",
+        "hidden": "Hidden",
+        "activity": "Activity",
+        "offers": "Offers",
+        "myOffers": "My offers",
+        "filter": "Filter",
+        "filters": "Filters"
+    },
+
+    "accountsettings": {
+        "title": "SETTINGS",
+        "profile": "@:profile",
+        "notifications": "Notifications",
+        "offers": "Offers",
+        "appearance": "Appearance"
+    },
+
+    "accountsettingsprofile": {
+        "title": "Profile Settings"
+    },
+
+    "accountactivitylist": {
+        "event": "Event",
+        "item": "Item",
+        "price": "Price",
+        "qty": "Quantity",
+        "owner": "Owner",
+        "date": "Date"
+    },
+
+    "accountoffersgrid": {
+        "item": "Item",
+        "price": "Price",
+        "qty": "Quantity",
+        "from": "From",
+        "date": "Date"
+    },
+
+    "accountfollow": {
+        "follow": "Follow",
+        "unFollow": "Unfollow",
+        "followers": "Followers",
+        "following": "Following",
+        "subscribed": "You successfully subscribed",
+        "unsubscribed": "You successfully cancel your subscription",
+        "follows": "Follows",
+        "followings": "Followings"
+    },
+
+    "accountmyoffersgrid": {
+        "item": "Item",
+        "price": "Price",
+        "qty": "Quantity",
+        "date": "Date"
+    },
+
+    "accountprofileform": {
+        "username": "Username",
+        "enterUsername": "Enter username",
+        "bio": "Bio",
+        "enterBio": "Enter Bio!",
+        "email": "Email Address",
+        "enterEmail": "Enter Email",
+        "enterTwitter": "YourTwitterHandle",
+        "enterInst": "YourInstagramHandle",
+        "enterWeb": "yoursite.io",
+        "wallet": "Wallet Address",
+        "profileImg": "Profile Image",
+        "profileBanner": "Profile Banner",
+        "address": "Address",
+        "fullname": "Fullname",
+        "phone": "Phone",
+        "street": "Street",
+        "apartment": "Apartment",
+        "city": "City",
+        "country": "Country",
+        "state": "State",
+        "zip": "Zip",
+        "enterFullname": "Enter full name",
+        "enterPhone": "Enter phone",
+        "enterStreet": "Enter street",
+        "enterCity": "Enter city",
+        "enterApartment": "Enter apartment",
+        "enterState": "Enter state",
+        "enterCountry": "Enter country",
+        "enterZip": "Enter zip",
+        "save": "Save",
+        "saveOk": "Profile saved successfully"
+    },
+
+    "accountshippingaddressform": {
+        "address": "Address",
+        "fullname": "Fullname",
+        "phone": "Phone",
+        "street": "Street",
+        "apartment": "Apartment",
+        "city": "City",
+        "country": "Country",
+        "state": "State",
+        "zip": "Zip",
+        "save": "Save",
+        "savedSuccessfully": "Shipping address saved successfully"
+    },
+
+    "nftresultauction": {
+        "acceptBid": "Accept Highest Bid",
+        "acceptBidSuccessful": "You have successfully accepted the highest bid"
+    },
+
+    "nftcancelauction": {
+        "cancelAuction": "Cancel Auction",
+        "cancelSuccessful": "You have successfully canceled the auction"
+    },
+
+    "nftwithdrawbid": {
+        "withdrawBid": "Withdraw Bid",
+        "withdrawBidSuccessful": "You have successfully withdrawn the bid"
+    },
+
+    "nftcancellisting": {
+        "cancelListing": "Cancel Listing",
+        "cancelSuccessful": "You have successfully canceled the listing"
+    },
+
+    "nftupdatelisting": {
+        "updateListing": "Update Listing",
+        "updateItem": "Update Your Listing"
+    },
+
+    "nftsellbutton": {
+        "sell": "Sell"
+    },
+
+    "nftsellwindow": {
+        "sellItem": "Sell Item"
+    },
+
+    "nftstartauctionbutton": {
+        "startAuction": "@:startAuction"
+    },
+
+    "nftstartauctionwindow": {
+        "title": "@:startAuction"
+    },
+
+    "nftupdateauctionbutton": {
+        "updateAuction": "@:updateAuction"
+    },
+
+    "nftupdateauctionwindow": {
+        "title": "@:updateAuction"
+    },
+
+    "notificationsettings": {
+        "title": "Notification Settings"
+    },
+
+    "appearancesettings": {
+        "title": "Appearance Settings",
+        "darkMode": "Dark Mode",
+        "autoDarkMode": "Auto Dark Mode",
+        "autoDarkModeInfo": "Sets the dark theme according to the system settings"
+    },
+
+    "notificationsettingsform": {
+        "minimumBid": "Minimum Bid Threshold",
+        "recieveWhenPriceEqualOrGreater": "Receive notifications only when you receive offers with a value greater than or equal to this amount of ETH. "
+    },
+
+    "view_not_found": {
+        "404": "404",
+        "text": "Oooooops! We couldn’t find the page you’re looking for :(",
+        "link_title": "Back to home"
+    }
+}

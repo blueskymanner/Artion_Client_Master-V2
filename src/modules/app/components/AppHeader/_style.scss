@@ -1,0 +1,117 @@
+@use "fantom-vue-components/src/assets/scss/tools/media";
+@use "@/assets/scss/variables";
+
+.appheader {
+    --appheader-background: #fff;
+    --appheader-border-bottom: 1px solid var(--f-color-grey-3);
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--f-spacer-2);
+
+    padding: var(--f-spacer-3) var(--main-lr-padding);
+    border-bottom: var(--appheader-border-bottom);
+    background: var(--appheader-background);
+
+    z-index: var(--f-zindex-fixed);
+
+    //flex ali-center gap-2 juc-space-between
+
+    &_col {
+        display: flex;
+        align-items: center;
+        gap: var(--f-spacer-5);
+        &:first-child {
+            width: 100%;
+        }
+    }
+    &_logo {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &_title {
+        font-weight: bold;
+        color: var(--f-doc-color);
+        font-size: var(--f-font-size-7);
+    }
+
+    &_mobile {
+        display: flex;
+        align-items: center;
+        gap: var(--f-spacer-5);
+    }
+
+    &_burger { display: none; }
+
+    img {
+        display: block;
+        margin: 0;
+    }
+}
+
+@include media.media-min(900px) {
+    .appheader {
+        flex-direction: row;
+        gap: var(--f-spacer-5);
+    }
+}
+
+@include media.media-min(1200px) {
+    .appheader {
+        gap: var(--f-spacer-9);
+
+        &_logo {
+            padding-right: 160px;
+        }
+    }
+}
+
+
+@include media.media-max(899px) {
+    .appheader {
+        flex-direction: row;
+        &_title {
+            display: none;
+        }
+        &_mobile {
+            position: absolute;
+            top: 80px;
+            bottom: 0;
+            left: -100%;
+            right: 0;
+            background-color: var(--appheader-background);
+            height: calc(100vh - 80px);
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: left .3s ease;
+            &.show {
+                left: 0;
+            }
+        }
+
+        &_burger { display: block; }
+
+        .appsearchbar {
+            padding: 0 var(--f-spacer-3);
+        }
+
+        .appmenu {
+            flex-direction: column;
+            width: 100%;
+            gap: 0;
+
+            a {
+                padding: var(--f-spacer-3);
+            }
+        }
+    }
+}

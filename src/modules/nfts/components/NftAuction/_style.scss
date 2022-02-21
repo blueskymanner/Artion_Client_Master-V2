@@ -1,0 +1,13 @@
+.nftauction {
+    &_label {
+        font-size: var(--f-font-size-4);
+    }
+
+    &_countdown {
+        &-red {
+            .fcountdown_amount {
+                color: var(--f-color-red-4);
+            }
+        }
+    }
+}

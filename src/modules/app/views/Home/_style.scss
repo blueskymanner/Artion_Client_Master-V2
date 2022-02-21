@@ -1,0 +1,10 @@
+.home {
+    &_shadow {
+        background: var(--homepage-gradient);
+    }
+
+    section {
+        padding-top: var(--f-spacer-9);
+        padding-bottom: var(--f-spacer-9);
+    }
+}

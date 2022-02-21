@@ -1,0 +1,178 @@
+@use "fantom-vue-components/src/assets/scss/elements/links/tools" as linkTools;
+@use "fantom-vue-components/src/assets/scss/elements/headings/tools" as headingTools;
+@use "fantom-vue-components/src/assets/scss/components/button/tools" as btnTools;
+@use "fantom-vue-components/src/assets/scss/tools/media";
+
+:root.theme-pg {
+    --theme-pg-background-color: #090C10;
+    --theme-pg-color: #EAEAF1;
+    --theme-pg-btn-border-radius: 16px;
+    --theme-pg-btn-background: #1147FF;
+    --theme-pg-currency-dropdown-background: #142035;
+    --theme-pg-currency-dropdown-background-selected: #273958;
+    --theme-pg-currency-dropdown-background-hover: #1f304e;
+
+    --f-font-size-1: 10px;
+    --f-font-size-2: 12px;
+    --f-font-size-3: 14px;
+    --f-font-size-4: 16px;
+    --f-font-size-5: 18px;
+    --f-font-size-6: 20px;
+    --f-font-size-7: 24px;
+    --f-font-size-8: 32px;
+    --f-font-size-9: 36px;
+    --f-font-size-10: 64px;
+    --f-font-size-11: 88px;
+
+    --f-spacer-6: 32px;
+
+    --f-doc-color: #fff;
+    --f-doc-background-color: var(--theme-pg-background-color);
+    --f-inputs-background: var(--theme-pg-background-color);
+
+    --f-color-primary-4: #3d81ff;
+
+    @include linkTools.links() {
+        --f-link-color: var(--theme-pg-color);
+    }
+
+    @include headingTools.headings() {
+        --f-h1-font-size: var(--f-font-size-8);
+        --f-h1-font-weight: 400;
+        --f-h1-letter-spacing: 0.28em;
+
+        --f-h2-font-size: var(--f-font-size-9);
+        --f-h2-font-weight: 400;
+        --f-h2-letter-spacing: 0.28em;
+
+        --f-h3-font-size: 48px;
+        --f-h3-font-weight: 800;
+        --f-h3-letter-spacing: -0.015em;
+        --f-h3-line-height: 1.2;
+        --f-h3-margin-top: 0;
+        --f-h3-margin-bottom: var(--f-spacer-4);
+
+        --f-h4-font-size: var(--f-font-size-6);
+        --f-h4-font-weight: 600;
+        --f-h4-letter-spacing: -0.015em;
+        --f-h4-margin-top: 0;
+        --f-h4-margin-bottom: 0;
+
+        @include media.media-min(768px) {
+            --f-h2-font-size: var(--f-font-size-10);
+
+            --f-h3-font-size: var(--f-font-size-10);
+            --f-h3-line-height: 1;
+            --f-h3-margin-bottom: var(--f-spacer-5);
+
+            --f-h4-font-size: var(--f-font-size-8);
+        }
+
+        @include media.media-min(1024px) {
+            --f-h1-font-size: var(--f-font-size-10);
+
+            --f-h3-margin-bottom: var(--f-spacer-7);
+        }
+
+        @include media.media-min(1440px) {
+            --f-h1-font-size: var(--f-font-size-11);
+        }
+    }
+
+    @include btnTools.button() {
+        --f-btn-lg-border-radius: var(--theme-pg-btn-border-radius);
+        --f-btn-main-color: var(--theme-pg-btn-background);
+    }
+
+    color: var(--theme-pg-color);
+
+    .theme-pg-u-font-weight-normal {
+        font-weight: 400;
+    }
+
+    .theme-pg-u-mb-0 {
+        margin-bottom: 0;
+    }
+
+    .theme-pg-u-w-100 {
+        width: 100%;
+    }
+
+    .theme-pg-u-text-right {
+        text-align: right;
+    }
+
+    .flistbox {
+        --flistbox-item-color: var(--theme-pg-color);
+        --flistbox-item-hover-color: var(--theme-pg-color);
+        --flistbox-item-background-color: var(--theme-pg-currency-dropdown-background);
+        --flistbox-item-hover-background-color: var(--theme-pg-currency-dropdown-background-hover);
+        --flistbox-item-selected-background-color: var(--theme-pg-currency-dropdown-background-hover);
+
+        & .flistbox_list_item:not(:first-child) {
+            border-top: 1px solid #273958;;
+        }
+    }
+
+    .fpopover {
+        --fwindow-popover-border-radius: 0 0 var(--f-border-radius-3) var(--f-border-radius-3);
+    }
+
+    .fplaceholder {
+        --fplaceholder-bg-color2: var(--theme-pg-currency-dropdown-background-selected);
+    }
+
+    .walletbutton {
+        & .fbutton {
+            color: var(--theme-pg-color);
+        }
+
+        &.walletbutton-notconnected .fbutton {
+            color: var(--theme-pg-color);
+            background: var(--theme-pg-btn-background);
+        }
+    }
+
+    .fwindow:not(.ferrormessagespopover) {
+        --fwindow-background: var(--theme-pg-background-color);
+        --fwindow-body-background: var(--theme-pg-background-color);
+        --fwindow-popover-background: transparent;
+
+        overflow: visible;
+        box-shadow: 0 16px 60px rgba(133, 139, 193, 0.11);
+
+        .fwindow-popover {
+            --fwindow-popover-background: var(--theme-dark-color-6);
+            --fwindow-body-background: var(--theme-dark-color-6);
+        }
+
+        .fwindow_header {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .fwindow_body {
+            border-radius: var(--f-border-radius-5);
+        }
+
+        .fwindow_header_title > .h3 {
+            text-align: left;
+            font-weight: 600;
+            font-size: var(--f-font-size-7);
+            letter-spacing: -0.015em;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+
+        .fnavigationnode_item {
+            background: #202a37;
+            color: #fff;
+        }
+    }
+
+    .foverlay {
+        --foverlay-background-color: none;
+        backdrop-filter: blur(3px);
+    }
+}
+

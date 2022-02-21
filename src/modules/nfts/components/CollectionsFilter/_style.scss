@@ -1,0 +1,10 @@
+@use "@/assets/scss/filter-item" as fi;
+
+@include fi.filter-item('collectionsfilter');
+
+.collectionsfilter {
+    .fimage {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
